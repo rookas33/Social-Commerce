@@ -13,6 +13,8 @@ module.exports = (sequelize, DataTypes) => {
   }
   Order.init(
     {
+      user_id: { type: DataTypes.INTEGER, allowNull: false },
+      product_id: { type: DataTypes.INTEGER, allowNull: false },
       content: { type: DataTypes.STRING, allowNull: false },
       status: { type: DataTypes.INTEGER, allowNull: false },
     },

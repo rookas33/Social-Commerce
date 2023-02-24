@@ -9,24 +9,12 @@ module.exports = (sequelize, DataTypes) => {
     {
       // 첫 번째 객체 인수는 테이블 필드에 대한 설정
       // id: { primaryKey: true, type: DataTypes.INTEGER },
-      name: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      nickname: {
-        type: DataTypes.STRING,
-      },
-      point: {
-        type: DataTypes.INTEGER,
-      },
+      name: { type: DataTypes.STRING, allowNull: false },
+      password: { type: DataTypes.STRING, allowNull: false },
+      email: { type: DataTypes.STRING, allowNull: false },
+      nickname: { type: DataTypes.STRING },
+      point: { type: DataTypes.INTEGER },
+      user_type: { type: DataTypes.INTEGER, allowNull: false },
     },
     {
       // 두 번째 객체 인수는 테이블 자체에 대한 설정
